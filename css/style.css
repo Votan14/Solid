@@ -193,6 +193,17 @@ html.menu-open .menu-mob {
 @media (max-width: 29.99875em) {
   ._text {
     font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+._subtitle {
+  font-size: 36px;
+  line-height: 128%;
+}
+@media (max-width: 61.99875em) {
+  ._subtitle {
+    font-weight: 600;
   }
 }
 
@@ -305,6 +316,9 @@ textarea.input {
   font-size: 26px;
   line-height: 138%;
   color: #262961;
+}
+.menu-courses._white {
+  color: #fff;
 }
 .menu-courses ul {
   display: flex;
@@ -558,13 +572,14 @@ textarea.input {
   color: #fff;
 }
 
-.footer__container {
+.footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 24px;
 }
 @media (max-width: 61.99875em) {
-  .footer__container {
+  .footer-content {
     justify-content: space-evenly;
   }
 }
@@ -678,6 +693,12 @@ textarea.input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-about {
+  font-family: Gopher;
+  font-weight: 500;
+  opacity: 0.5;
 }
 
 .first {
@@ -1256,6 +1277,12 @@ textarea.input {
   padding-top: 50px;
   padding-bottom: 100px;
   position: relative;
+}
+.reviews._last {
+  padding-bottom: 150px;
+}
+.reviews._last .reviews-slider-box {
+  bottom: 50px;
 }
 
 .reviews-subtitle {
@@ -1887,6 +1914,185 @@ textarea.input {
   height: 5px;
   border-radius: 50%;
   background-color: #262961;
+}
+
+.about-first {
+  padding-top: 242px;
+  padding-bottom: 188px;
+  background-image: url("../img/about/01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-first-title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.about-first-text {
+  color: #fff;
+  text-align: center;
+}
+
+.school {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.school-title {
+  margin-bottom: 40px;
+}
+
+.school-text {
+  margin-bottom: 100px;
+}
+@media (max-width: 61.99875em) {
+  .school-text {
+    margin-bottom: 30px;
+  }
+}
+
+.school-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #262961;
+}
+@media (max-width: 61.99875em) {
+  .school-item {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+}
+
+.school-item-content {
+  flex: 0 1 50%;
+}
+@media (max-width: 61.99875em) {
+  .school-item-content {
+    flex: 1 1 auto;
+    margin-bottom: 24px;
+  }
+}
+.school-item-content li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.school-item-content li:last-child {
+  margin-bottom: 0;
+}
+.school-item-content li:before {
+  position: absolute;
+  content: "";
+  left: 5px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #262961;
+}
+
+.school-item-title {
+  margin-bottom: 40px;
+}
+
+.school-item-text {
+  font-size: 18px;
+}
+
+.school-item-img {
+  flex: 0 1 35%;
+}
+.school-item-img img {
+  max-width: 100%;
+}
+@media (max-width: 61.99875em) {
+  .school-item-img {
+    flex: 1 1 auto;
+    text-align: center;
+    order: 1;
+  }
+}
+
+.partners {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.partners-title {
+  margin-bottom: 60px;
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.partners-item {
+  flex: 0 1 23%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 560px;
+}
+@media (max-width: 61.99875em) {
+  .partners-item {
+    flex: 0 1 49%;
+    margin-bottom: 44px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .partners-item {
+    flex: 1 1 auto;
+  }
+}
+.partners-item img {
+  max-width: 100%;
+}
+
+.partners-item-content {
+  min-height: 136px;
+}
+@media (max-width: 29.99875em) {
+  .partners-item-content {
+    min-height: auto;
+  }
+}
+
+.partners-item-img {
+  margin-bottom: 20px;
+  height: 345px;
+}
+@media (max-width: 29.99875em) {
+  .partners-item-img {
+    height: auto;
+  }
+  .partners-item-img img {
+    width: 100%;
+  }
+}
+
+.partners-item-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.partners-read a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 }
 .swiper {
   overflow: hidden;
