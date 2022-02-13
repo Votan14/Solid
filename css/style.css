@@ -165,7 +165,8 @@ html.menu-open .menu-mob {
 @media (max-width: 47.99875em) {
   [class*=__container] {
     max-width: none;
-    padding: 0 0.9375rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
@@ -851,11 +852,24 @@ textarea.input {
 .about-item-img img {
   max-width: 84px;
 }
+@media (max-width: 29.99875em) {
+  .about-item-img {
+    flex: 0 1 25%;
+  }
+  .about-item-img img {
+    max-width: 100%;
+  }
+}
 
 .about-item-title {
   font-weight: 600;
   font-size: 26px;
   line-height: 36px;
+}
+@media (max-width: 29.99875em) {
+  .about-item-title {
+    font-size: 22px;
+  }
 }
 
 .about-item-text {
