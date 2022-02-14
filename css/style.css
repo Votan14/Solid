@@ -2360,6 +2360,263 @@ input:checked + .courses-slider:before {
 .prices-test-link {
   text-align: center;
 }
+
+.results {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.results-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  border-bottom: 2px solid #262961;
+  flex-wrap: wrap;
+}
+@media (max-width: 61.99875em) {
+  .results-list {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.results-content {
+  flex: 0 1 42%;
+}
+@media (max-width: 61.99875em) {
+  .results-content {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 47.99875em) {
+  .results-content {
+    flex: 1 1 auto;
+  }
+}
+
+.results-goal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.results-title {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.results-text {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.results-name {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+.results-full a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.results-full-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-img {
+  flex: 0 1 45%;
+}
+@media (max-width: 61.99875em) {
+  .results-img {
+    flex: 0 1 40%;
+  }
+}
+@media (max-width: 47.99875em) {
+  .results-img {
+    flex: 1 1 auto;
+    order: -1;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+.results-img img {
+  max-width: 100%;
+}
+
+.more-results {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.more-results-title {
+  margin-bottom: 10px;
+}
+
+.more-results-inst {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.more-results__slider {
+  padding-left: 39px;
+  padding-right: 39px;
+  margin-bottom: 80px;
+}
+@media (max-width: 61.99875em) {
+  .more-results__slider {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 47.99875em) {
+  .more-results__slide {
+    text-align: center;
+  }
+  .more-results__slide img {
+    width: 100%;
+  }
+}
+
+.more-result__container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 50px;
+}
+
+.more-results-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.results-reviews {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.results-reviews-title {
+  margin-bottom: 60px;
+}
+
+.results-reviews-all {
+  margin-bottom: 10px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.results-reviews-block {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.results-reviews-name {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.results-reviews-text {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.choose-test {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+@media (max-width: 47.99875em) {
+  .choose-test {
+    padding-bottom: 0;
+  }
+}
+
+.choose-test__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("../img/results/09.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 18px;
+  flex-wrap: wrap;
+}
+@media (max-width: 47.99875em) {
+  .choose-test__container {
+    padding-top: 40px;
+  }
+}
+
+.choose-test-img {
+  flex: 0 1 30%;
+}
+@media (max-width: 47.99875em) {
+  .choose-test-img {
+    flex: 1 1 auto;
+    order: 1;
+    text-align: center;
+  }
+}
+.choose-test-img img {
+  max-width: 100%;
+}
+
+.choose-test-content {
+  flex: 0 1 40%;
+}
+@media (max-width: 47.99875em) {
+  .choose-test-content {
+    flex: 1 1 auto;
+  }
+}
+
+.choose-test-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 14px;
+}
+@media (max-width: 47.99875em) {
+  .choose-test-title {
+    text-align: center;
+  }
+}
+
+.choose-test-text {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+@media (max-width: 47.99875em) {
+  .choose-test-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 47.99875em) {
+  .choose-test-link {
+    text-align: center;
+  }
+}
 .swiper {
   overflow: hidden;
 }
