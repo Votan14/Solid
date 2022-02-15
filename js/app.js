@@ -3870,10 +3870,10 @@
             observeParents: true,
             slidesPerView: 3,
             spaceBetween: 100,
-            speed: 3e3,
+            speed: 5e3,
             loop: true,
             autoplay: {
-                delay: 2e3,
+                delay: 0,
                 disableOnInteraction: false
             },
             breakpoints: {

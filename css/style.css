@@ -123,6 +123,10 @@ body {
   overflow: hidden;
   touch-action: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 html.menu-open .menu-mob {
   display: block;
   left: 0;
@@ -269,7 +273,7 @@ textarea {
   width: 100%;
   display: block;
   padding: 10px 20px;
-  border: 1px solid #00c3eb;
+  border: 1px solid #3AFFDC;
   padding-right: 40px;
   outline: none;
   font-size: 18px;
@@ -316,13 +320,17 @@ textarea.input {
   padding-bottom: 21px;
   background: #262961;
   color: #fff;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .menu-courses {
   position: absolute;
-  bottom: -50px;
-  z-index: 10;
+  top: 100px;
+  z-index: 9;
   font-size: 26px;
   line-height: 138%;
   color: #262961;
@@ -347,7 +355,7 @@ textarea.input {
 }
 .menu-courses._relative {
   position: relative;
-  bottom: 0;
+  top: 70px;
   margin-bottom: 184px;
 }
 @media (max-width: 61.99875em) {
@@ -731,6 +739,7 @@ textarea.input {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .footer-about {
@@ -747,7 +756,7 @@ textarea.input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 200px;
   flex-wrap: wrap;
 }
 
@@ -1011,8 +1020,7 @@ textarea.input {
   display: flex;
   justify-content: center;
   position: relative;
-  flex-wrap: wrap;
-  gap: 30px;
+  gap: 24px;
 }
 @media (max-width: 61.99875em) {
   .how-list {
@@ -1021,7 +1029,7 @@ textarea.input {
 }
 
 .how-item {
-  flex: 0 1 18%;
+  flex: 0 1 16%;
 }
 @media (max-width: 61.99875em) {
   .how-item {
@@ -1052,7 +1060,7 @@ textarea.input {
 
 .how-item-text {
   text-align: center;
-  max-width: 166px;
+  max-width: 154px;
   margin: 0 auto;
 }
 @media (max-width: 47.99875em) {
@@ -1273,7 +1281,7 @@ textarea.input {
 }
 .companies-img img {
   max-width: 100%;
-  border-radius: 20px;
+  border-radius: 20px 0px 0px 20px;
 }
 
 .companies-review-content {
@@ -1454,6 +1462,12 @@ textarea.input {
   font-weight: 900;
   font-size: 62px;
   line-height: 115%;
+}
+
+.roadmap-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .roadmap-subtitle {
@@ -1786,10 +1800,18 @@ textarea.input {
 
 .blog-read a {
   display: flex;
-  align-items: center;
   gap: 21px;
   font-weight: 600;
   font-size: 20px;
+  transition: all 0.5s ease 0s;
+}
+.blog-read a:hover {
+  color: #00C3EB;
+  gap: 36px;
+}
+.blog-read img {
+  padding-top: 2px;
+  transition: width 0.5s ease 0s;
 }
 
 .want {
@@ -1898,7 +1920,7 @@ textarea.input {
 }
 
 .question-title {
-  margin-bottom: 60px;
+  margin-bottom: 37px;
 }
 
 .spollers__item {
@@ -1990,7 +2012,7 @@ textarea.input {
 }
 
 .school-text {
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 @media (max-width: 61.99875em) {
   .school-text {
@@ -2044,6 +2066,7 @@ textarea.input {
 
 .school-item-title {
   margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .school-item-text {
@@ -2114,6 +2137,8 @@ textarea.input {
 .partners-item-img {
   margin-bottom: 20px;
   height: 345px;
+  border: 1px solid rgba(38, 41, 97, 0.12);
+  border-radius: 6px;
 }
 @media (max-width: 29.99875em) {
   .partners-item-img {
@@ -2137,10 +2162,18 @@ textarea.input {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  transition: all 0.5s ease 0s;
+}
+.partners-read a:hover {
+  color: #00C3EB;
+  gap: 27px;
+}
+.partners-read img {
+  padding-top: 2px;
 }
 
 .prices-nav {
-  padding-top: 65px;
+  padding-top: 130px;
   padding-bottom: 65px;
 }
 
@@ -2177,8 +2210,9 @@ textarea.input {
 }
 
 .courses {
-  padding-top: 60px;
+  padding-top: 120px;
   padding-bottom: 60px;
+  margin-top: -60px;
 }
 
 .courses-title {
@@ -2256,9 +2290,7 @@ textarea.input {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  background: #262961;
   border-radius: 34px;
 }
 .courses-slider:before {
@@ -2275,11 +2307,7 @@ textarea.input {
 }
 
 input:checked + .courses-slider {
-  background-color: #2196f3;
-}
-
-input:focus + .courses-slider {
-  box-shadow: 0 0 1px #2196f3;
+  background: linear-gradient(90deg, #00C3EB -32.14%, #3AFFDC 78.57%);
 }
 
 input:checked + .courses-slider:before {
@@ -2345,6 +2373,7 @@ input:checked + .courses-slider:before {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 40px;
 }
 
 .prices-test-title {
@@ -2427,6 +2456,10 @@ input:checked + .courses-slider:before {
   align-items: center;
   gap: 20px;
   font-weight: bold;
+  transition: all 0.5s ease 0s;
+}
+.results-full a:hover {
+  gap: 35px;
 }
 
 .results-full-icon {
@@ -2627,6 +2660,11 @@ input:checked + .courses-slider:before {
   box-sizing: content-box;
   display: flex;
   position: relative;
+}
+
+.companies__slider .swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
 }
 
 .swiper-vertical .swiper-wrapper {
