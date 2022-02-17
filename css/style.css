@@ -615,6 +615,19 @@ textarea.input {
   }
 }
 
+.header-phone-mob {
+  position: absolute;
+  right: 86px;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  z-index: 5;
+}
+.header-phone-mob img {
+  width: 35px;
+  height: 35px;
+}
+
 .icon-menu {
   display: none;
 }
@@ -1408,13 +1421,16 @@ textarea.input {
 
 .companies__slider {
   background: #3affdc;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 46px;
 }
 
 .companies__slide {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .companies-review {
@@ -2574,6 +2590,7 @@ textarea.input {
   line-height: 29px;
   text-align: left;
   transition: all 0.5s ease 0s;
+  margin-bottom: 20px;
 }
 @media (max-width: 47.99875em) {
   .courses-spollers__title.courses-name {
@@ -2627,6 +2644,20 @@ textarea.input {
   display: none;
 }
 
+._group {
+  display: none;
+}
+
+.courses-spollers__body {
+  min-height: 200px;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 47.99875em) {
+  .courses-spollers__body {
+    min-height: auto;
+  }
+}
+
 .courses-slider {
   position: absolute;
   cursor: pointer;
@@ -2654,6 +2685,14 @@ input:checked + .courses-slider {
   background: linear-gradient(90deg, #00C3EB -32.14%, #3AFFDC 78.57%);
 }
 
+.courses-select-block input:checked ~ .courses-group ._ind {
+  display: none;
+}
+.courses-select-block input:checked ~ .courses-group ._group {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 input:checked + .courses-slider:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
@@ -2664,6 +2703,13 @@ input:checked + .courses-slider:before {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .courses-mark {
@@ -2969,14 +3015,17 @@ input:checked + .courses-slider:before {
   }
 }
 
-.choose-test__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.choose-test-box {
   background-image: url("../img/results/09.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.choose-test__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   padding-top: 18px;
   flex-wrap: wrap;
 }
