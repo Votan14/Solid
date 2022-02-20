@@ -3869,7 +3869,7 @@
             observer: true,
             observeParents: true,
             slidesPerView: 3,
-            spaceBetween: 100,
+            spaceBetween: 50,
             speed: 5e3,
             loop: true,
             autoplay: {
@@ -3879,8 +3879,7 @@
             breakpoints: {
                 320: {
                     slidesPerView: 1,
-                    spaceBetween: 0,
-                    autoHeight: true
+                    spaceBetween: 0
                 },
                 768: {
                     slidesPerView: 2,
@@ -3888,7 +3887,7 @@
                 },
                 992: {
                     slidesPerView: 3,
-                    spaceBetween: 100
+                    spaceBetween: 50
                 }
             },
             on: {}
@@ -3912,7 +3911,7 @@
             breakpoints: {
                 320: {
                     slidesPerView: 1,
-                    spaceBetween: 30
+                    spaceBetween: 50
                 },
                 768: {
                     slidesPerView: 2,
@@ -4015,6 +4014,28 @@
                 320: {
                     slidesPerView: 1,
                     spaceBetween: 0
+                },
+                570: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".want__rightslider")) new core(".want__rightslider", {
+            modules: [ Pagination ],
+            observer: true,
+            observeParents: true,
+            speed: 800,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
                 },
                 570: {
                     slidesPerView: 2,
