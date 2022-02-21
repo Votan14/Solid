@@ -4039,6 +4039,12 @@ input:checked + .courses-slider:before {
     bottom: 60px;
   }
 }
+
+.road__slide {
+  border: 1px solid #262961;
+  border-radius: 15px;
+  padding: 10px;
+}
 .swiper {
   overflow: hidden;
 }
