@@ -4044,6 +4044,50 @@
             },
             on: {}
         });
+        if (document.querySelector(".courses__slider")) new core(".courses__slider", {
+            modules: [ Pagination ],
+            observer: true,
+            observeParents: true,
+            speed: 800,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                570: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".road__slider")) new core(".road__slider", {
+            modules: [ Pagination ],
+            observer: true,
+            observeParents: true,
+            speed: 800,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                570: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            },
+            on: {}
+        });
     }
     window.addEventListener("load", (function(e) {
         initSliders();
