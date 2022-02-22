@@ -3878,8 +3878,8 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
+                    slidesPerView: 1.5,
+                    spaceBetween: 50
                 },
                 768: {
                     slidesPerView: 2,
@@ -3942,7 +3942,7 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 1.2,
                     spaceBetween: 40
                 },
                 768: {
@@ -3990,8 +3990,8 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
+                    slidesPerView: 1.2,
+                    spaceBetween: 30
                 },
                 570: {
                     slidesPerView: 2,
@@ -4012,8 +4012,8 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
+                    slidesPerView: 1.2,
+                    spaceBetween: 30
                 },
                 570: {
                     slidesPerView: 2,
@@ -4034,7 +4034,7 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 1.2,
                     spaceBetween: 30
                 },
                 570: {
@@ -4056,7 +4056,7 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 1.3,
                     spaceBetween: 30
                 },
                 570: {
@@ -4078,7 +4078,7 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 1.1,
                     spaceBetween: 30
                 },
                 570: {
