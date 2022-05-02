@@ -269,8 +269,10 @@ html.menu-open .menu-mob {
   background: #262961;
   border-radius: 5px;
   padding: 16px 20px;
-  width: 223px;
+  min-width: 225px;
   color: #fff;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 ._blue-link.courses-learn-link a {
@@ -2324,12 +2326,12 @@ textarea.input {
     margin-bottom: 20px;
   }
 }
-.blog-read._show {
+.blog-read._nonshow {
   display: none;
 }
 
 @media (max-width: 61.99875em) {
-  .blog-read._show {
+  .blog-read._nonshow {
     display: flex;
   }
 }
@@ -2950,7 +2952,7 @@ textarea.input {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 .courses-item._interest {
   flex: 0 1 48%;
@@ -3042,12 +3044,16 @@ textarea.input {
   width: 42px;
   height: 20px;
 }
+.courses-switch._one {
+  width: 0;
+  height: 0;
+}
 
 .courses-switch input {
   display: none;
 }
 
-._group {
+._show {
   display: none;
 }
 
@@ -3092,13 +3098,13 @@ input:checked + .courses-slider {
   background: linear-gradient(90deg, #00c3eb -32.14%, #3affdc 78.57%);
 }
 
-.courses-select-block input:checked ~ .courses-group ._ind,
-.main-course-select-block input:checked ~ .courses-group ._ind {
+.courses-select-block input:checked ~ .courses-group ._nonshow,
+.main-course-select-block input:checked ~ .courses-group ._nonshow {
   display: none;
 }
 
-.courses-select-block input:checked ~ .courses-group ._group,
-.main-course-select-block input:checked ~ .courses-group ._group {
+.courses-select-block input:checked ~ .courses-group ._show,
+.main-course-select-block input:checked ~ .courses-group ._show {
   display: inline-block;
   white-space: nowrap;
 }
@@ -3120,6 +3126,9 @@ input:checked + .courses-slider:before {
   display: flex;
   align-items: center;
   gap: 14px;
+}
+.courses-group._one {
+  left: 0;
 }
 
 .courses-group._courses {
@@ -3169,6 +3178,7 @@ input:checked + .courses-slider:before {
   display: flex;
   align-items: center;
   margin-bottom: 4px;
+  font-size: 18px;
 }
 
 .courses-price-all {
@@ -4883,7 +4893,7 @@ input:checked + .courses-slider:before {
 }
 
 .main-course-left {
-  flex: 0 1 31%;
+  flex: 0 1 35%;
 }
 @media (max-width: 75em) {
   .main-course-left {
@@ -5003,6 +5013,7 @@ input:checked + .courses-slider:before {
 .when-time-day {
   font-weight: 600;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .when-time-text {
@@ -5126,10 +5137,13 @@ input:checked + .courses-slider:before {
   max-width: 740px;
   margin: 0 auto;
   margin-bottom: 40px;
+  font-size: 18px;
 }
 
 .when-test-link {
   text-align: center;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .theme {
@@ -5138,7 +5152,7 @@ input:checked + .courses-slider:before {
 }
 
 .theme-title {
-  max-width: 400px;
+  max-width: 450px;
   margin-bottom: 60px;
 }
 
@@ -5221,6 +5235,26 @@ input:checked + .courses-slider:before {
 
 ._courses-spoler {
   height: 100%;
+}
+
+.courses-link {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.courses-more-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.courses-item-interest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
 }
 .swiper {
   overflow: hidden;
