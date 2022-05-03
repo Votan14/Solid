@@ -5324,7 +5324,7 @@ input:checked + .courses-slider:before {
   padding-bottom: 70px;
 }
 
-.courses-plus-text {
+.courses-plus-bottom {
   margin: 0 auto;
   max-width: 875px;
   font-weight: 600;
@@ -5333,7 +5333,7 @@ input:checked + .courses-slider:before {
   line-height: 120%;
 }
 @media (max-width: 47.99875em) {
-  .courses-plus-text {
+  .courses-plus-bottom {
     font-size: 18px;
   }
 }
