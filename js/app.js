@@ -3947,6 +3947,28 @@
             },
             on: {}
         });
+        if (document.querySelector(".rec__slider")) new core(".rec__slider", {
+            modules: [ Pagination ],
+            observer: true,
+            observeParents: true,
+            speed: 800,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                570: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                }
+            },
+            on: {}
+        });
         if (document.querySelector(".theme__slider")) new core(".theme__slider", {
             modules: [ Pagination ],
             observer: true,
