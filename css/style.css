@@ -5407,6 +5407,77 @@ input:checked + .courses-slider:before {
   font-size: 24px;
   margin-bottom: 20px;
 }
+
+.rec-course-subtitle {
+  font-size: 26px;
+  margin-bottom: 60px;
+  max-width: 800px;
+  line-height: 120%;
+}
+
+.price-teacher {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.price-teacher-title {
+  margin-bottom: 30px;
+}
+
+.price-teacher-subtitle {
+  margin-bottom: 60px;
+  font-size: 26px;
+  max-width: 690px;
+  line-height: 120%;
+}
+@media (max-width: 47.99875em) {
+  .price-teacher-subtitle {
+    font-size: 22px;
+  }
+}
+
+.price-teacher-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 47.99875em) {
+  .price-teacher-box {
+    gap: 34px;
+  }
+}
+
+.price-teacher-left {
+  flex: 0 1 39%;
+  padding: 60px;
+  background: linear-gradient(180deg, rgba(244, 37, 154, 0.1) 0%, rgba(58, 255, 220, 0.42) 0.01%, #fffdc6 100%), #ffffff;
+  border: 2px solid #262961;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+}
+@media (max-width: 47.99875em) {
+  .price-teacher-left {
+    flex: 1 1 100%;
+  }
+}
+
+.price-teacher-right {
+  flex: 0 1 38%;
+}
+@media (max-width: 47.99875em) {
+  .price-teacher-right {
+    flex: 1 1 100%;
+  }
+}
+
+.price-teacher-name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
 .swiper {
   overflow: hidden;
 }
