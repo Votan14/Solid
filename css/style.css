@@ -588,7 +588,7 @@ textarea.input {
 }
 .page-social {
   position: fixed;
-  right: 34px;
+  right: 20px;
   top: 50%;
   transform: translate(0, -30%);
   z-index: 15;
