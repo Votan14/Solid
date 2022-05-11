@@ -4300,6 +4300,11 @@
     };
     const da = new DynamicAdapt("max");
     da.init();
+    document.getElementById("starter-inp").addEventListener("change", toggleInput);
+    function toggleInput(evt) {
+        document.getElementById("starter-ind").classList.toggle("hidden-div");
+        document.getElementById("starter-group").classList.toggle("hidden-div");
+    }
     window["FLS"] = true;
     isWebp();
     menuInit();
