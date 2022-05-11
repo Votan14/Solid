@@ -3870,16 +3870,16 @@
             observeParents: true,
             slidesPerView: 3,
             spaceBetween: 100,
-            speed: 3e3,
+            speed: 5e3,
             loop: true,
             autoplay: {
-                delay: 2e3,
+                delay: 0,
                 disableOnInteraction: false
             },
             breakpoints: {
                 320: {
                     slidesPerView: 1,
-                    spaceBetween: 0,
+                    spaceBetween: 20,
                     autoHeight: true
                 },
                 768: {
@@ -4057,8 +4057,8 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
+                    slidesPerView: 1.2,
+                    spaceBetween: 20
                 },
                 768: {
                     slidesPerView: 2,
@@ -4067,6 +4067,126 @@
                 992: {
                     slidesPerView: 3,
                     spaceBetween: 40
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".about-listslider__slider")) new core(".about-listslider__slider", {
+            modules: [ Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 3,
+            spaceBetween: 40,
+            speed: 800,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20
+                },
+                570: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".blog-listslider__slider")) new core(".blog-listslider__slider", {
+            modules: [ Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 3,
+            spaceBetween: 40,
+            speed: 800,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20
+                },
+                570: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".want__rightslider")) new core(".want__rightslider", {
+            modules: [ Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 3,
+            spaceBetween: 40,
+            speed: 800,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20
+                },
+                570: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".partners-listslider__slider")) new core(".partners-listslider__slider", {
+            modules: [ Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 3,
+            spaceBetween: 40,
+            speed: 800,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20
+                },
+                570: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".road__slider")) new core(".road__slider", {
+            modules: [ Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 3,
+            spaceBetween: 40,
+            speed: 800,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.1,
+                    spaceBetween: 20
+                },
+                570: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
                 }
             },
             on: {}
