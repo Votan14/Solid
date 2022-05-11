@@ -4948,6 +4948,17 @@ input:checked + .courses-slider:before {
   display: none !important;
 }
 
+#starter-ind {
+  display: none;
+}
+#starter-ind.hidden-div {
+  display: flex;
+}
+
+#starter-group.hidden-div {
+  display: none;
+}
+
 .main-course {
   padding-top: 210px;
   padding-bottom: 120px;
